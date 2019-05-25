@@ -20,7 +20,10 @@ public class Stack {
     public static void push(Object ele){
         li.addFirst(ele);
     }
-     public static Object pop(){
+     public static Object pop() throws EmptyError{
+         if(li.isEmpty()){
+             throw new EmptyError();
+         }
          return li.removeFirst();
      }
      public static Object peek(){
