@@ -15,5 +15,6 @@ public class CallingClass {
         s.push("asdf");
         s.push("qwert");
         System.out.println(s.pop());
+        System.out.println(s.inEmpty());
     }
 }
