@@ -29,5 +29,8 @@ public class Stack {
      public static int size(){
          return li.size();
      }
+     public static boolean inEmpty(){
+         return li.isEmpty();
+     } 
     
 }
