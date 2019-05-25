@@ -14,7 +14,15 @@ public class CallingClass {
         Stack s=new Stack();
         s.push("asdf");
         s.push("qwert");
+        try{
         System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.pop());
+        
+        }
+        catch(EmptyError e){
+            System.out.println(e);
+        }
         System.out.println(s.inEmpty());
     }
 }
