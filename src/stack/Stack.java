@@ -5,6 +5,7 @@
  */
 package stack;
 
+import java.util.EmptyStackException;
 import java.util.LinkedList;
 
 /**
@@ -27,7 +28,15 @@ public class Stack {
          return li.removeFirst();
      }
      public static Object peek(){
+         if(li.isEmpty()) throw new EmptyStackException();
          return li.get(0);
+     }
+   
+     public static void printStack(){
+         System.out.println("head=>");
+         for(Object i:li){
+             System.out.println(i);
+         }
      }
      public static int size(){
          return li.size();

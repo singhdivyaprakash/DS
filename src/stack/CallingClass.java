@@ -14,6 +14,8 @@ public class CallingClass {
         Stack s=new Stack();
         s.push("asdf");
         s.push("qwert");
+        s.printStack();
+        System.out.println(s.peek());
         try{
         System.out.println(s.pop());
         System.out.println(s.pop());
